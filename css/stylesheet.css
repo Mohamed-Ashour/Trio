@@ -1,0 +1,806 @@
+
+/*
+
+*Author: Mohamed Ashour 
+*Website: www.ashour.tk
+*Temltate Name: Trio
+*Version: 1.0
+*/
+
+
+/* Basic styles
+====================================================*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 62.5%;
+  line-height: 1.4;
+	color: #767e9e;
+	font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+	width: 100%;
+	background-color: #f2f2f2;
+	text-align: center;
+}
+
+h1,
+h2,
+h3 {
+	color: #666d89;
+	cursor: default;
+}
+
+h1 {
+	color: #fff;
+	font-weight: 700;
+	font-size: 4.1em;
+	padding: .5em 0 0;
+	margin: 0;
+	text-transform: uppercase; 
+}
+
+h2 {
+	font-weight: 900;
+	font-size: 2.5em;
+}
+
+h2:after {
+	content: '_';
+	display: block;
+	font-size: 1.2em;
+	line-height: 1;
+	margin-top: -.5em;
+	margin-bottom: 1em;
+}
+
+h3 {
+	font-weight: 900;
+	font-size: 1.6em;
+}
+
+p {
+	font-weight: 400;
+	font-size: 1.6em;
+	cursor: default;
+}
+
+h2+p {
+	margin-bottom: 3em;
+	font-size: 1.8em;
+	font-weight: 300;
+}
+
+h3+p {
+	line-height: 1.6;
+	margin-top:.5em ;
+	letter-spacing: .05em;
+}
+
+a {
+	text-decoration: none;
+}
+
+.facebook,
+.google-plus,
+.twitter,
+.linkdin {
+	height: 3.2em;
+	width: 3.2em;
+	display: inline-block;
+	-webkit-transition: 400ms;
+		 -moz-transition: 400ms;
+					transition: 400ms;
+}
+
+.facebook {
+	background: url(../images/facebook.png) no-repeat;
+	margin-right: .2em;
+
+}
+
+.facebook:hover {
+	background: url(../images/facebook-h.png) no-repeat;
+}
+
+.google-plus {
+	background: url(../images/google-plus.png) no-repeat;
+	margin-right: .2em;
+}
+
+.google-plus:hover {
+	background: url(../images/google-plus-h.png) no-repeat;
+}
+
+.twitter {
+	background: url(../images/twitter.png) no-repeat;
+	margin-right: .2em;
+}
+
+.twitter:hover {
+	background: url(../images/twitter-h.png) no-repeat;
+}
+
+.linkdin {
+	background: url(../images/linkdin.png) no-repeat;
+	margin-right: .2em;
+}
+
+.linkdin:hover {
+	background: url(../images/linkdin-h.png) no-repeat;
+}
+
+li {
+	display: inline-block;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+
+.services,
+.portfolio,
+.about-us,
+.contact {
+	padding: 6em 5%;
+}
+
+.browser-upgrade {
+  margin: 0.3em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.3em 0;
+}
+
+
+/* Clear fix
+==========================*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+
+/* Header styles
+	====================================================*/
+
+.top-header {
+	background-color: #2d303a;
+	border-bottom: 6px solid  #323746;
+}
+
+
+
+.top-header a {
+	color: #fff;
+	-webkit-transition: 400ms;
+		 -moz-transition: 400ms;
+					transition: 400ms;
+}
+
+.top-header,
+.top-header h1,
+.top-header span{
+	-webkit-transition: 700ms;
+		 -moz-transition: 700ms;
+					transition: 700ms;
+}
+
+span,
+a.selected,
+a.selected:hover {
+	color: #f06c64;
+}
+	
+nav a {
+	font-weight: 700;
+	font-size: 1.3em;
+	display: block;
+	padding: 1em;
+	text-transform: uppercase;
+}
+	
+nav a:hover {
+	color: #767e9e;
+}
+
+.banner {
+	height: 25em;
+	background: #f06c64 url(../images/responsive-set.png) no-repeat center;
+	background-size: cover;
+	border-bottom: .6em solid #ea676b;
+	-webkit-transition: 700ms;
+		 -moz-transition: 700ms;
+					transition: 700ms;
+}
+
+
+
+/* Services styles
+====================================================*/
+
+.services div {
+	padding-top: 8em;
+	margin-top: 5em;
+	-webkit-transition: 700ms;
+		 -moz-transition: 700ms;
+					transition: 700ms;
+}
+
+.services h3 {
+	margin: 0;
+}
+
+
+.service-1 {
+	background: url(../images/pen-Icon.png) no-repeat center top;
+} 
+
+.service-2 {
+	background: url(../images/bulb-Icon.png) no-repeat center top;
+} 
+
+.service-3 {
+	background: url(../images/heart-Icon.png) no-repeat center top;
+} 
+
+.service-4 {
+	background: url(../images/phone-Icon.png) no-repeat center top;
+} 
+
+.service-5 {
+	background: url(../images/talk-Icon.png) no-repeat center top;
+} 
+
+.service-6 {
+	background: url(../images/star-Icon.png) no-repeat center top;
+} 
+
+
+
+/* Portfolio styles
+====================================================*/
+
+.portfolio {
+	background-color: #2d303a;
+}
+
+.portfolio p {
+	margin-bottom: 2em;
+}
+
+.portfolio li {
+	float: left; 
+	width: 47.5%;
+	margin-bottom: 1.5em;
+	-webkit-transition: 700ms;
+		 -moz-transition: 700ms;
+					transition: 700ms;
+}
+
+.portfolio img {
+	-webkit-transition: 500ms;
+		 -moz-transition: 500ms;
+					transition: 500ms;
+}
+
+.portfolio img:hover {
+	position: relative;
+	z-index: 100;
+	-webkit-transform: scale(1.3);
+	   -moz-transform: scale(1.3);
+		-ms-transform: scale(1.3);
+			transform: scale(1.3);
+}
+
+.project-1,
+.project-3,
+.project-5,
+.project-7,
+.project-9,
+.project-11 {
+	margin-right: 5%;
+}
+
+.portfolio img {
+	width: 100%;
+}
+
+
+
+/* About Us styles
+====================================================*/
+
+.about-us div {
+	padding-top: 25em;
+	-webkit-transition: 700ms;
+		 -moz-transition: 700ms;
+					transition: 700ms;
+	background-size: 25em 25em;
+}
+
+
+.person-1 {
+	background: url(../images/person-1.jpg) no-repeat top;
+}
+
+.person-2 {
+	background: url(../images/person-2.jpg)no-repeat top;
+	
+}
+
+.person-3 {
+	background: url(../images/person-3.jpg)no-repeat top;
+}
+
+.about-us ul {
+	margin-bottom: 7em;
+}
+
+.person-3 ul {
+	margin-bottom: 0;
+}
+
+
+
+/* Contact styles
+====================================================*/
+
+.contact {
+	background-color: #f06c64;
+	color: #f0d8d9;
+	position: relative;
+}
+
+.contact h2,
+.contact h3 {
+	color: #f0d8d9;
+}
+
+input,
+textarea,
+button {
+	width:100%;
+	display: block;
+	padding: 1em;
+	margin-bottom: .9em;
+	border: 0;
+	border-radius: .4em;
+	font-size: 1.6em;
+	background-color: #d6564f;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+	outline-color: #f0d8d9;
+}
+
+::-webkit-input-placeholder {
+	color: #f48c8f;
+}
+
+::-moz-input-placeholder {
+	color: #f48c8f;
+}
+
+::-ms-input-placeholder {
+	color: #f48c8f;
+}
+
+input-placeholder {
+	color: #f48c8f;
+}
+
+.contact button {
+	margin-top: 1.5em;
+	border-bottom: .4em solid #d14949;
+	margin-bottom: 5em;
+}
+
+.contact h3+p {
+	margin-bottom: 3em;
+}
+
+.contact li {
+	display: block;
+	margin-top: 1.5em;
+}
+
+.contact a {
+	font-weight: 400;
+	font-size: 1.6em;
+	line-height: 1.6;
+	color: #f0d8d9;
+}
+
+.contact li.location:before {
+	content: url(../images/location.png) ;
+	margin-right: 1em;
+}
+
+.contact li.telephone:before {
+	content: url(../images/telephone.png);
+	margin-right: 1em;
+}
+
+.contact li.email:before {
+	content: url(../images/email.png);
+	margin-right: 1em;
+}
+
+.top {
+	display: block;
+	width: 3em;
+	height: 3em;
+	border-radius: 50%;
+	background: #f0d8d9 url(../images/top.png) no-repeat center ;
+	margin: 3em auto -5.2em;
+}
+
+
+
+/* Footer styles
+====================================================*/
+
+footer {
+	background-color: #2d303a;
+	padding: 3em 5%;
+}
+
+footer p,
+footer ul {
+	margin: 0;
+}
+
+footer p {
+	margin-bottom: 1em;
+	font-size: 1.3em;
+}
+
+
+
+@media only screen and (min-width: 480px) {
+	
+	
+	/* Basic styles
+	====================================================*/
+	
+	.services,
+	.portfolio,
+	.about-us,
+	.contact {
+		padding: 4em 7% 6em;
+	}
+	
+	
+	/* Header styles
+	====================================================*/
+	
+	.banner {
+		height: 38em
+	}
+	
+	
+	/* Portfolio styles
+	====================================================*/
+	
+	.portfolio li {
+		margin-bottom: 2em;	
+	}
+	
+	
+	
+	/* About Us styles
+	====================================================*/
+	
+	.about-us div{
+		padding-top: 30em;
+		background-size: 30em 30em;
+	}
+	
+}
+
+
+
+@media only screen and (min-width: 660px) {
+	
+	/* Basic styles
+	====================================================*/
+	
+	h1 {
+		font-size: 3em;
+		padding: .3em;
+	}
+	
+	h2 {
+		font-size: 3em;
+	}
+	
+	h3 {
+		font-size: 1.8em;
+	}
+	
+	p {
+		font-size: 1.2em;
+	}
+	
+	h2+p {
+		font-size: 1.8em;
+		line-height: 1.6666667;
+	}
+	
+	h3+p {
+		line-height: 1.7966667;
+	}
+	
+	
+	
+	/* Header styles
+	====================================================*/
+	
+	.top-header {
+		padding: 1.5em 7%;
+	}
+	
+	nav a {
+		font-size: 1.2em;
+	}
+	
+	nav a:not([href="#contact"])::after {
+		content: "·";
+		color: #494e62;
+		font-size: 1.2em;
+		display: inline;
+		margin: 0 -1em 0 1em;
+	}
+	
+	.top-header h1 {
+		float: left;
+	}
+	
+	nav {
+		float: right;
+	} 
+	
+	.banner {	
+		height: 52em;
+	}
+	
+	
+	
+	/* Services styles
+	====================================================*/
+	
+	.services h2+p {
+		margin-bottom: .8em;
+	}
+	
+	.services div {
+		width: 47%;
+		float: left;
+		padding-top: 0;
+		padding-left: 7em;
+		text-align: justify;
+		background-position: left top;
+	}
+	
+	.service-1,
+	.service-3,
+	.service-5 {
+		margin-right: 6%;
+	}
+	
+	
+	
+	/* Portfolio styles
+	====================================================*/	
+	
+	.portfolio li { 
+		width: 32%;
+		margin-bottom: 1.5em;
+	}
+	
+	.project-3,
+	.project-9 {
+		margin-right: 0;
+	}
+
+	.project-1,
+	.project-2,
+	.project-4,
+	.project-5,
+	.project-7,
+	.project-8,
+	.project-10,
+	.project-11{
+		margin-right: 2%;
+	}
+	
+	
+	
+	/* About Us styles
+	====================================================*/
+	
+	.about-us div{
+		float: left;
+	}
+	
+	.person-1,
+	.person-2 {
+		width: 48%;
+	}
+	
+	.person-1 {
+		margin-right: 4%;
+	}
+	
+	.person-3 {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	
+	
+	
+	/* Contact styles
+	====================================================*/
+	.contact-info li {
+		margin-top: .8em;
+	}
+	
+	
+	
+	/* Footer styles
+	====================================================*/
+	
+	footer {
+		padding: 2em 7%;
+		line-height: 1;
+	}
+	
+	footer p {
+		float: left;
+		vertical-align: bottom;
+		margin: 0;
+		padding: .85em 0;
+	}
+	
+	footer ul {
+		float: right;
+	}
+	
+}
+
+
+
+@media only screen and (min-width: 980px) {
+	
+	
+	/* Header styles
+	====================================================*/
+	
+	.banner {	
+		background-size: auto;
+		height: 57em;
+	}
+
+	
+	
+	/* Services styles
+	====================================================*/
+	
+	.services div {
+		width: 32%;
+	}
+	
+	.service-1,
+	.service-2,
+	.service-4,
+	.service-5 {
+		margin-right: 2%;
+	}
+	
+	.service-3 {
+		margin-right: 0;
+	}
+	
+	
+	
+	/* Portfolio styles
+	====================================================*/
+	
+	
+	.portfolio li {
+		width: 23.5%;
+		margin-bottom: 2em;
+	}
+	
+	.project-4,
+	.project-8 {
+		margin-right: 0;
+	}
+	
+	.project-1,
+	.project-2,
+	.project-3,
+	.project-5,
+	.project-6,
+	.project-7,
+	.project-9,
+	.project-10,
+	.project-11 {
+		margin-right: 2%;
+	}	
+	
+	
+	
+	/* About Us styles
+	====================================================*/
+	
+	.about-us div{
+		width: 32%;
+	}
+	
+	.person-1,
+	.person-2 {
+		margin-right: 2%;
+	}
+	
+	.person-3 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.about-us ul {
+	margin-bottom:2.5em;
+	}
+	
+	
+	
+	/* Contact styles
+	====================================================*/
+	
+	form {
+		width: 63%;
+		float: left;
+		margin-right: 2%;
+	}
+	
+	.contact-info {
+		width: 35%;
+		float: left;
+		text-align: justify;
+	}
+	
+	.contact-info h3 {
+		margin-top: 0;
+	}
+	
+	.contact button {
+		margin-bottom: 0;
+	}
+
+	.top {
+		display:none;
+	}
+	
+}
